@@ -38,3 +38,37 @@ document.addEventListener('DOMContentLoaded', () => {
     gsap.from('#skills', {duration: 1, y: 100, opacity: 0, delay: 2});
     gsap.from('#contact', {duration: 1, y: 100, opacity: 0, delay: 2.5});
 });
+document.addEventListener('DOMContentLoaded', () => {
+    const comparisonSlider = document.querySelector('.comparison-slider');
+    const comparisonHandle = document.querySelector('.comparison-handle');
+    const beforeImage = document.querySelector('.comparison-image.before');
+    const afterImage = document.querySelector('.comparison-image.after');
+    
+    let isDragging = false;
+
+    comparisonHandle.addEventListener('mousedown', (e) => {
+        isDragging = true;
+        document.addEventListener('mousemove', onDrag);
+        document.addEventListener('mouseup', stopDrag);
+    });
+
+    function onDrag(e) {
+        if (!isDragging) return;
+        const sliderRect = comparisonSlider.getBoundingClientRect();
+        let xPos = e.clientX - sliderRect.left;
+        if (xPos < 0) xPos = 0;
+        if (xPos > sliderRect.width) xPos = sliderRect.width;
+        updateSlider(xPos / sliderRect.width * 100);
+    }
+
+    function stopDrag() {
+        isDragging = false;
+        document.removeEventListener('mousemove', onDrag);
+        document.removeEventListener('mouseup', stopDrag);
+    }
+
+    function updateSlider(percentage) {
+        comparisonHandle.style.left = `${percentage}%`;
+        afterImage.style.clip = `rect(0, ${percentage}%, 100%, 0)`;
+    }
+});
