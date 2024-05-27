@@ -829,7 +829,7 @@ section .container {
   display: flex;
   flex-direction: row;
   align-items: center;
-  padding: 30px;
+  padding: -70px;
   border-radius: 10px;
   text-align: left;
   justify-content: space-between;
