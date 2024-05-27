@@ -807,7 +807,7 @@ section .container {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 10px;
+  gap: 35px;
 }
 /* 
 .portfolio .col-lg-12 {
@@ -819,9 +819,9 @@ section .container {
 .portfolio .col-lg-6,
 .portfolio .col-md-6 {
     display: flex;
-    flex: 0 0% 0%;
+    flex: 0 0% 100%;
     max-width: 100%;
-    padding: 0px;
+    padding: 10px;
 }
 
 .portfolio .icon-box {
