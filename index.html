@@ -31,33 +31,33 @@
 <body>
 
   <!-- ======= Header ======= -->
-  <header id="header">
-    <div class="container">
+<header id="header">
+  <div class="container">
 
       <h1><a href="index.html">Ayonete Icha</a></h1>
-      <!-- <a href="index.html" class="mr-auto"><img src="assets/img/logo.png" alt="" class="img-fluid"></a> -->
+    <!-- <a href="index.html" class="mr-auto"><img src="assets/img/logo.png" alt="" class="img-fluid"></a> -->
       <h2>I'm a designer and a <span>junior developer</span></h2>
       <nav id="navbar" class="navbar">
         <ul>
           <li><a class="nav-link active" href="#header">Home</a></li>
           <li><a class="nav-link" href="#about">About</a></li>
           <li><a class="nav-link" href="#resume">Resume</a></li>
-          <!-- <li><a class="nav-link" href="#services">Services</a></li> -->
           <li><a class="nav-link" href="#portfolio">Projects</a></li>
           <li><a class="nav-link" href="#contact">Contact</a></li>
         </ul>
-        <i class="bi bi-list mobile-nav-toggle"></i>
+      <i class="bi bi-list mobile-nav-toggle"></i>
       </nav><!-- .navbar -->
-      <div class="social-links">
-        <a href="#" class="python"><i class="fa-brands fa-python"></i></a><!--python-->
-        <a href="#" class="html"><i class="fa-brands fa-html5"></i></a><!--html-->
-        <a href="#" class="css"><i class="fa-brands fa-css3-alt"></i></a><!--css-->
-        <a href="#" class="facebook"><i class="fa-brands fa-js"></i></a><!--javascript-->
-        <a href="#" class="react"><i class="fa-brands fa-react"></i></a><!--typescript-->
-        <a href="#" class="git"><i class="fa-brands fa-github"></i></a><!--typescript-->
-        <a href="#" class="git"><i class="fa-brands fa-aws"></i></a><!--typescript-->
-      </div>
+    <div class="social-links">
+    <a href="#" class="python"><i class="fa-brands fa-python"></i></a><!--python-->
+    <a href="#" class="html"><i class="fa-brands fa-html5"></i></a><!--html-->
+    <a href="#" class="css"><i class="fa-brands fa-css3-alt"></i></a><!--css-->
+    <a href="#" class="facebook"><i class="fa-brands fa-js"></i></a><!--javascript-->
+    <a href="#" class="react"><i class="fa-brands fa-react"></i></a><!--typescript-->
+    <a href="#" class="git"><i class="fa-brands fa-github"></i></a><!--typescript-->
+    <a href="#" class="git"><i class="fa-brands fa-aws"></i></a><!--typescript-->
     </div>
+</div>
+      
   </header><!-- End Header -->
 
   <!-- ======= About Section ======= -->
@@ -250,7 +250,7 @@
             
 
             <p>
-              Relevant Coursework: Scalable Cloud Programming, Cloud Platform Programming, Cloud Security, Blockchain technologies, Fog and Edge Computing, Cloud Machine Learning
+              Relevant Coursework: Scalable Cloud Programming, Cloud Platform Programming, Cloud DevOps Security, Blockchain technologies, Fog and Edge Computing, Cloud Machine Learning
             
             </p>
           
@@ -306,6 +306,17 @@
         </div>
         <div class="col-lg-6">
           <h3 class="resume-title">Projects</h3>
+          <div class="resume-item">
+            <h4>Energy efficient Generative-AI Application</h4>
+            <p>July 2024</p>
+            <ul>
+              <li>
+              For my masters research project, I developed and deployed a Generative-AI application optimised for energy efficiency, speed and cost using AWS services. 
+              The applciation works by using NLP techniques to determine the complexity of a given prompt and then selects the most efficient model to generate the text, preventing larger models from being used for simpler tasks.
+              The application leverages AWS Lambda for serverless computing, S3 for storage, and CloudWatch for monitoring. 
+              </li>
+            </ul>
+          </div>
           <div class="resume-item">
             <h4>Scalable Carbon Footprint Tracker with AWS Lambda</h4>
             <p>April 2024</p>
@@ -493,8 +504,8 @@
         </div>
       </div>
       
-
-      <form action="forms/contact.php" method="post" role="form" class="php-email-form mt-4">
+<!-- 
+      <form action="forms/sendmail.php" method="post" role="form" class="php-email-form mt-4">
        <div class ="section-title">
         <h2 style="color: white;">Send me a message</h2>
         <p style="color: white;">Talk To Me</p>
@@ -519,7 +530,7 @@
           <div class="sent-message">Your message has been sent. Thank you!</div>
         </div>
         <div class="text-center"><button type="submit">Send Message</button></div>
-      </form>
+      </form> -->
 
     </div>
   </section><!-- End Contact Section -->
